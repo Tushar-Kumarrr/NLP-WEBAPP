@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NER</title>
+</head>
+<body>
+
+    <form action="/ner_performed" method="post">
+        <lable>Type your text here: </lable><br>
+        <textarea name="ner_text"></textarea><br>
+        <input type="submit" value="Perform">
+    </form>
+
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+
+</body>
+</html>
